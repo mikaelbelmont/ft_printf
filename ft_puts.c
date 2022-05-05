@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbarreto <mbarreto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/03 17:36:51 by mbarreto          #+#    #+#             */
-/*   Updated: 2022/05/05 16:42:59 by mbarreto         ###   ########.fr       */
+/*   Created: 2022/05/05 17:52:43 by mbarreto          #+#    #+#             */
+/*   Updated: 2022/05/05 19:54:45 by mbarreto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_putnumber(int n)
 		sig = -1;
 		ft_putchar('-');
 	}
-	return (ft_conv_base(n * sig, "0123456789", 10) + 1);
+	return (ft_conv_base(n * sig, "0123456789", 10) + (n < 0));
 }
 
 int	ft_putui(unsigned int n, char *base, int base_size)
@@ -51,9 +51,10 @@ int	ft_putul(unsigned long n)
 {
 	return (ft_conv_base(n, "0123456789abcdef", 16));
 }
+
 //int	main(void)
 //{
-//	printf("\ncount: %d\n", '9');
+//	printf("\ncount: %d\n", 1);
 //	printf("\n===============================\n");
-//	ft_printf("\ncount: %d\n", '9');
+//	ft_printf("\ncount: %d\n", 1);
 //}

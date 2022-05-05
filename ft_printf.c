@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbarreto <mbarreto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/03 15:06:46 by mbarreto          #+#    #+#             */
-/*   Updated: 2022/05/04 19:45:25 by mbarreto         ###   ########.fr       */
+/*   Created: 2022/05/05 17:52:39 by mbarreto          #+#    #+#             */
+/*   Updated: 2022/05/05 19:09:23 by mbarreto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_found_format(const char *format, int i, va_list *args)
 	else if (format[i] == 's')
 		return (ft_putstr(va_arg(*args, char *)));
 	else if (format[i] == 'p')
-		return (write(1, "0x", 2) + ft_putul(va_arg(*args, unsigned int)));
+		return (write(1, "0x", 2) + ft_putul(va_arg(*args, unsigned long int)));
 	else if (format[i] == 'd')
 		return (ft_putnumber(va_arg(*args, int)));
 	else if (format[i] == 'i')
