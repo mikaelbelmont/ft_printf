@@ -6,7 +6,7 @@
 /*   By: mbarreto <mbarreto@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 17:52:43 by mbarreto          #+#    #+#             */
-/*   Updated: 2022/05/05 19:54:45 by mbarreto         ###   ########.fr       */
+/*   Updated: 2022/05/06 16:47:00 by mbarreto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,10 +51,3 @@ int	ft_putul(unsigned long n)
 {
 	return (ft_conv_base(n, "0123456789abcdef", 16));
 }
-
-//int	main(void)
-//{
-//	printf("\ncount: %d\n", 1);
-//	printf("\n===============================\n");
-//	ft_printf("\ncount: %d\n", 1);
-//}
